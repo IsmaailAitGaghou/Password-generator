@@ -108,6 +108,7 @@ body {
     color: #fff;
     transition: opacity 0.2s linear , transform 0.2s linear;
     opacity: 0;
+    box-shadow: 0 4px 10px rgba(0 , 0, 0, 0.6);
 }
 
 input {
