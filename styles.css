@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F65A83;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pw-container {
+    background-color: #FF87B2;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0 , 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+.pw-header {
+    padding: 1rem;
+}
+
+.pw {
+    border-radius: 8px;
+    background-color: #F65A83;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.pw button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0 , 50%);
+    transition: opacity 0.2s linear , transform  0.2s linear;
+    opacity: 0;
+    background-color: rgb(35, 5, 66);
+    padding: 0.25rem 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#pw-head {
+    color: #eee;
+}
+
+.pw:hover button {
+    opacity: 1;
+    transform: translate(0,-50%);
+}
+
+.pw-body {
+    padding: 0 1rem 1rem;
+}
+
+.form-control {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
+
+.form-control #lenght {
+    border: 2px solid #F65A83;
+    padding: 3px;
+}
+
+.generate {
+    width: 100%;
+    height: 59px;
+    color: #F65A83;
+    background-color: #FFF8BC;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.alert {
+    position: absolute;
+    bottom: 0;
+    right: 300;
+    border-radius: 8px;
+    width: 400px;
+    height: 40px;
+    padding: 40px;
+    font-size: 1.5rem;
+    margin-bottom: 100px;
+    background-color: #FF87B2;
+    color: #fff;
+    transition: opacity 0.2s linear , transform 0.2s linear;
+    opacity: 0;
+}
+
+input {
+    background-color: #F65A83;
+    border: 3px solid #fff;
+}
+
+.alert.open {
+    opacity: 1;
+}
